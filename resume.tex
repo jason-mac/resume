@@ -1,0 +1,233 @@
+
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+	\textbf{\Huge \scshape Jason Mac} \\ \vspace{1pt}
+	\small 604-360-5546 $|$ \href{jasonvanmac:@gmail.com}{\underline{jasonvanmac@gmail.com}} $|$
+	\href{https://www.linkedin.com/in/jasonvanmac}{\underline{linkedin.com/in/jasonvanmac}} $|$
+	\href{https://github.com/jason-mac}{\underline{github.com/jason-mac}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{University of British Columbia}{Vancouver, BC, Canada}
+{Bachelor of Applied Science in Computer Engineering}{Sept. 2024 - Present}
+\resumeItemListStart
+\resumeItem{GPA: 95.1\%}
+\resumeItem{Relevant Coursework: Algorithm Design and Analysis, Database Mangament Systems, Software Construction, Probability, Proofs }
+\resumeItemListEnd
+
+\resumeSubheading
+{Douglas College}{New Westminster, BC, Canada}
+{Engineering Associate}{Sept. 2022 -- May 2024}
+\resumeItemListStart
+\resumeItem{GPA: 4.24/4.33}
+\resumeItem{Relevant Coursework: Intro to Python, Object-oriented C++, Calculus I-III, Linear Algebra, Discrete Math}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+	\small{\item{
+	      \textbf{Languages}{: Python, C/C++, C\#, SQL, JavaScript, HTML, Java, Bash/Zsh, \LaTeX} \\
+	      \textbf{Developer Tools}{: Git, GitHub, Neovim, Visual Studio, Jupyter Notebook} \\
+	      }}
+\end{itemize}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Lox Interpreter} $|$ \emph{C\#, Python, Xunit}}{}
+\resumeItemListStart
+\resumeItem{Built a fully functional interpreter for the Lox programming language in C\#, following the structure and guidance from \emph{Crafting Interpreters} by Robert Nystrom.}
+\resumeItem{Developed the lexer, parser, and evaluator modules, creating a clean and modular architecture}
+\resumeItem{Implemented control flow, functions, variable handling, classes, and runtime errors for debugging}
+\resumeItem{Utilized Xunit to unit test the lexer and parser methods to solidify the correctness of the interpreter}
+\resumeItem{Wrote Python scripts to generate C\# code for the Lox interpreter, enhancing development speed and modularity}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Tetris Game} $|$ \emph{C, Raylib}}{}
+\resumeItemListStart
+\resumeItem{Developed Tetris game in C using Raylib library for graphics and input handling, implementing classic gameplay}
+\resumeItem{Designed and managed the game loop, collision detection, shape spawning and board state}
+\resumeItem{Implemented game over conditions, score increasing, and restart gameplay functionality}
+\resumeItem{Organized Tetris source code into modular and organized C and header files for a readable library structure}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{League of Legends Analytics} $|$ \emph{Javascript, Express.js, HTML, Oracle}}{}
+\resumeItemListStart
+\resumeItem{Designed a full-stack application to help players analyze performance and make informed champion and strategy choices based on trending data}
+\resumeItem{Developed the web application using a Node.js and Express.js backend serving RESTful APIs and a dynamic frontend using JavaScript and HTML}
+\resumeItem{Implemented database schemas and queries using Oracle to store and retrieve league of legends match data}
+\resumeItem{Collaborated with two other team members using Git for version control and code reviews}
+\resumeItemListEnd
+\resumeProjectHeading
+{\textbf{Fitness Workout Logger} $|$ \emph{Java, Java Swing, JUnit}}{}
+\resumeItemListStart
+\resumeItem{Developed a desktop fitness tracking application to log workouts, manage routines, and analyze progress}
+\resumeItem{Applied test-driven development to guide feature implementation through iterative testing with JUnit}
+\resumeItem{Used JSON for persistent data storage, allowing users to save and load workout data from file locally}
+\resumeItem{Implemented a Swing-based GUI with multiple interactive tabs for adding, viewing, filtering, and deleting workouts}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Site Foreman}{Jan 2020 -- May 2022}
+{True Level Concrete}{Surrey, BC, Canada}
+\resumeItemListStart
+\resumeItem{Manage teams of three or more to ensure work contracts are completed within given deadlines}
+\resumeItem{Engage in the restoration of concrete foundations and slabs, and service/repair of mechanical equipment}
+\resumeItem{Contribute to over \$1M in company revenue by overseeing commercial/residential projects and generating sales}
+\resumeItemListEnd
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+
+\resumeSubHeadingListEnd
+
+\section{References}
+\resumeItemListStart
+\resumeItem{References given upon request}
+\resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
