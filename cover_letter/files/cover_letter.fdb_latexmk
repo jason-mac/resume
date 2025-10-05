@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1755114108.01184 "cover_letter.tex" "cover_letter.pdf" "cover_letter" 1755114108.72174 0
+["pdflatex"] 1759699058.02014 "cover_letter.tex" "cover_letter.pdf" "cover_letter" 1759699058.69962 0
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5brands0.enc" 1622837620 2920 d63721872b8c77041b88e51b8f7c291d ""
   "/usr/local/texlive/2024/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc" 1622837620 3042 0e2b14b9be7d01075a4c4591d5d1781b ""
@@ -78,11 +78,11 @@
   "/usr/local/texlive/2024/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1728622656.90807 5467645 128b85b7cde5f5edc5cb7f1dd7ff8736 ""
   "/usr/local/texlive/2024/texmf-var/web2c/pdftex/pdflatex.fmt" 1728622562 8221449 e1cc3a73d4d08f8f8c1a6176c2a142d0 ""
   "/usr/local/texlive/2024/texmf.cnf" 1710266656 577 e590dabc9e28c5b61546e15f63eebcdf ""
-  "body.tex" 1755114027.40799 2256 d8f401879edeeea788eef47f657c8c27 ""
-  "cover_letter.aux" 1755114108.67964 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
-  "cover_letter.out" 1755114108.51053 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "body.tex" 1759699038.93439 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "cover_letter.aux" 1759699058.65499 162 55205a9e8a8eca30d36afb389b0617bf "pdflatex"
+  "cover_letter.out" 1759699058.48201 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "cover_letter.tex" 1754383010.47661 1285 442f58ecac92746df6b493321797ba27 ""
-  "info.tex" 1755114106.27314 1170 f8e953ab2ab8ba9c941a506525aa0643 ""
+  "info.tex" 1759699032.89324 946 bd2e2c5edac75a58cd075452d0ec2672 ""
   "sig.png" 1754383279.3195 6621 b4cc17194e74379fa9759c63ba5e8e6f ""
   (generated)
   "cover_letter.aux"
