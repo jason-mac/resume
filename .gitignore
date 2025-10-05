@@ -1,12 +1,51 @@
-# Node modules
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails and cache
+._*
+.Spotlight-V100
+.Trashes
+.Icon?
+.DocumentRevisions-V100
+.fseventsd
+.VolumeIcon.icns
+
+# Node / Angular
 node_modules/
+dist/
+out-tsc/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Angular / TypeScript
+*.tsbuildinfo
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# VS Code
+.vscode/
+.history/
+*.code-workspace
 
 # Logs
 *.log
 
-# Build output
-dist/
-out-tsc/
+# .NET / C# (if applicable)
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
 
-# Environment files
-.env
+# Git itself
+.gitignore
+
+# Optional: Mac OS resource fork files
+*.DS_Store
